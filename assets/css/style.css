@@ -1,0 +1,101 @@
+body {
+    font-family: 'EB Garamond', serif;
+
+    /* Taken from strategiesthatpay.com */
+    background-image: url("../images/subtle-light-pattern-background-texture.jpg");
+}
+
+/* Page header */
+header {
+    position: fixed;
+    top: 0;
+}
+
+/* Brand style */
+span {
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+}
+
+/* Main card positioning */
+article {
+    position: relative;
+    top: 40px;
+    margin-left: 20px;
+    margin-bottom: 100px; 
+}
+
+/* Card styling */
+.card-style {
+    background-color: whitesmoke;
+    margin: 30px 10px;
+}
+
+/* About Me styling */
+.my-title {
+    font-family: 'EB Garamond', serif;
+    /* color: rgb(42, 1, 71); */
+    color: teal;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 25px 0px 15px;
+    border-bottom: 2px solid grey;
+}
+
+/* Stunning image */
+.about-me {
+    float: left;
+    margin: 5px 15px 5px 0px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Stunning image */
+.portfolio {
+    float: left;
+    margin: 5px 25px 25px 0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Button style */
+button {
+   /* background-color:rgb(42, 1, 71); */      
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-clock;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Bragging */
+p {
+    font-size: 20px;
+    padding: 7px;
+}
+
+/* Ribbon on top of footer */
+.ribbon {
+    height: 5px;
+    /* background-color:rgb(42, 1, 71); */
+    background-color: teal;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    position:fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color:grey;
+}
+/* Change the padding to center the text */
+footer p {
+    padding: 10px;
+}
