@@ -35,8 +35,8 @@ article {
 /* About Me styling */
 .my-title {
     font-family: 'EB Garamond', serif;
-    /* color: rgb(42, 1, 71); */
-    color: teal;
+    color: rgb(42, 1, 71);
+    /* color: teal; */
     font-size: 50px;
     font-weight: bold;
     padding: 25px 0px 15px;
@@ -61,8 +61,8 @@ article {
 
 /* Button style */
 button {
-   /* background-color:rgb(42, 1, 71); */      
-    background-color: teal;
+    background-color:rgb(42, 1, 71);      
+    /* background-color: teal; */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -81,8 +81,8 @@ p {
 /* Ribbon on top of footer */
 .ribbon {
     height: 5px;
-    /* background-color:rgb(42, 1, 71); */
-    background-color: teal;
+    background-color:rgb(42, 1, 71);
+    /* background-color: teal; */
     width: 100%;
 }
 
