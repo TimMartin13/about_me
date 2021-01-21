@@ -24,10 +24,10 @@
 <body>
 
     <!-- Bootstrap Nav bar -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="navbar navbar-expand-lg navbar-dark bkgd-color">
         <div class="container-fluid">
             <!-- Header -->
-            <a class="navbar-brand" href="#"><span class="bg-secondary">Tim Martin</span></a>
+            <a class="navbar-brand" href="#"><span class="text-color">Tim Martin</span></a>
             <!-- Toggler button for when page gets small-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,13 +36,13 @@
             <nav class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav d-flex ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        <a class="nav-link active" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">About</a>
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -50,26 +50,52 @@
     </header>
 
     <!-- Grid style -->
-    <main class="container">
-        <article class="row">
-            <div class="col-md-8 col-xl-10 card-style">
+    <main class="container-fluid main-content">
+        <article class="row center">
+            <div class="col-md-7 card-style bkgd-color">
                 <!-- Card Header -->
-                <div class="col-md-12">
+                <div class="col-md-12 ">
                     <!-- Title -->
-                    <h1 class="my-title">About Me</h1>
+                    <h1 class="my-title text-color">About Me</h1>
                     <section class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 text-color">
                             <!-- Picture -->
-                            <img class="about-me" src="assets/images/IMG_3268.JPG" alt="Lounging on the couch">
+                            <img class="about-me" src="./assets/images/ProfilePicture.jpg" alt="Lounging on the couch">
                             <!-- Information -->
-                            <p>Hi, my name is Tim Martin.  I grew up in Eden Prairie, MN.  I have a Bachelor of Science degree in Applied Computer Science from St. Cloud State University. For the last 15 years, I have risen through the ranks in the airline industry as a Software Engineer specializing in C++.  My keen eye for detail got me my last job because during the interview, when my future boss asked me if I was detail oriented, I said, "Oh yeah, I am quite anal when it comes to that stuff." (It is a good trait for a programmer so zip it.)
+                            <p>Hi, my name is Tim Martin.  I grew up in Eden Prairie, MN.  I have a Bachelor of Science degree in Applied Computer Science from St. Cloud State University. For the last 15 years, I have risen through the ranks in the airline industry as a Software Engineer specializing in C++.  During the pandemic of 2020, I was laid off and decided to add web development to my repertoire by taking a Full Stack developer bootcamp through the University of Minnesota.  I now enjoy coding in HTML, CSS, and JavaScript in addition to C++ and Python.
                             </p>
-                            <p>Now for the fun stuff.  I am overly sarcastic, so much so that if I really want, you can't tell if I am being sarcastic, or if I am just being an ass.  I am a huge Star Wars nerd and I completely geeked out during the season finale of Season 2 of The Mandalorian.  I enjoy hanging out with my wife and daughter, traveling, listening to music when I code (mostly rock, or classical mixed with techno), and playing with my dog, Buster.  Speaking of Buster, you might want to click on my portfolio because... PUPPY PICTURES!
+                            <p>Now for the fun stuff.  I am overly sarcastic, so much so that if I really want, you can't tell if I am being sarcastic, or if I am just being an ass.  I am a huge Star Wars nerd and I completely geeked out during the season finale of Season 2 of The Mandalorian.  I enjoy hanging out with my wife and daughter, traveling, listening to music when I code (mostly rock, or classical mixed with techno), and playing with my dog, Buster.  
                             </p>
                         </div> 
                     </section>
                 </div>  
             </div>
+            
+            <div class="col-sm-12 col-md-4">
+                <!-- Card Header -->
+                <div class="col-sm-12">
+                    <!-- Title -->
+                    <section class="row">
+                        <div class="col-md-12 info">
+                            <!-- Information -->
+                            <div class="card bkgd-color">
+                                <div class="card-body bkgd-color text-color">
+                                    <h4 class="card-title text-color">Tim Martin</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">Full Stack Developer</h6>
+                                    <div class="contact-info">
+                                        <p class="card-p">Phone: 612.799.1450</p>
+                                        <p class="card-p">Email: timmartin13@gmail.com</p>
+                                        <p class="card-p">Github: <a class="card-a" href="https://github.com/TimMartin13" target="_blank">github.com/TimMartin13</a></p>
+                                        <p class="card-p">LinkedIn: <a class="card-a" href="https://www.linkedin.com/in/tim-martin13/" target="_blank">linkedin.com/in/tim-martin13/</a></p>
+                                        <p class="card-p">Resume: <a class="card-a" href="./assets/images/TimMartinResume.pdf" download>&emsp;.pdf</a><a class="card-a" href="./assets/images/TimMartinResume.docx" download>&emsp;&emsp;.docx</a></p>
+                                    </div>
+                                </div>
+                              </div>
+                        </div> 
+                    </section>
+                </div>  
+            </div>
+            
         </article>
     </main>
 
@@ -84,12 +110,16 @@
         </section> 
         <!-- Main footer -->
         <section class="row">
-            <div class="col-md-12">
+            <div class="col-sm-6">
                 <p>
-                    &copy; Copyright 2020 Tim Martin
+                    &copy; Copyright 2021 Tim Martin
                 </p>
             </div>
-            
+            <div class="col-sm-6 contact">
+                <h6> Phone: (612) 799-1450</h6>
+                <h6> Email: timmartin13@gmail.com</h6>
+                
+            </div>       
         </section>
     </footer>
 </body>

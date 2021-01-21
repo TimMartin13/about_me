@@ -1,8 +1,6 @@
 body {
     font-family: 'EB Garamond', serif;
-
-    /* Taken from strategiesthatpay.com */
-    background-image: url("../images/subtle-light-pattern-background-texture.jpg");
+    background-image: url("https://wallpapercave.com/wp/WM8j8fk.jpg");
 }
 
 /* Page header */
@@ -10,14 +8,25 @@ header {
     position: fixed;
     top: 0;
 }
-
+/* Main container for the page */
+.main-content {
+    margin: auto;
+}
 /* Brand style */
 span {
-    color: white;
     padding: 5px;
     font-size: 24px;
 }
+/* Center class */
+.center {
+    justify-content: center;
+}
 
+/* Contact information card */
+.info {
+    justify-content: center;
+    margin-top: 2em;
+}
 /* Main card positioning */
 article {
     position: relative;
@@ -28,15 +37,43 @@ article {
 
 /* Card styling */
 .card-style {
-    background-color: whitesmoke;
-    margin: 30px 10px;
+    margin: 10px 10px;
+    float: left;
+    border-radius: 5px;
+}
+
+/* Easy to change text color */
+.text-color {
+    color: #D2D3D3;
+}
+/* Easy to change background color */
+.bkgd-color {
+    background-color: #2D3032;
+}
+
+.contact-info {
+    vertical-align: center;
+}
+/* Paragraphs on the information card */
+.card-p {
+    font-size: 16px;
+    list-style: none;
+    line-height: 20px;
+}
+
+/* Links on the information card */
+.card-a {
+    color: #0299df;
+}
+
+.card-a:hover {
+    text-decoration: none;
+    color:grey; 
 }
 
 /* About Me styling */
 .my-title {
     font-family: 'EB Garamond', serif;
-    color: rgb(42, 1, 71);
-    /* color: teal; */
     font-size: 50px;
     font-weight: bold;
     padding: 25px 0px 15px;
@@ -54,16 +91,22 @@ article {
 /* Stunning image */
 .portfolio {
     float: left;
-    margin: 5px 25px 25px 0px;
+    margin: 5px 25px 50px 0px;
     max-width: 100%;
     max-height: 100%;
+    /* border: 2px solid #0299df; */
+    border-radius: 20px;
+}
+/* Titles for my projects */
+.project-title {
+    text-decoration: underline;
 }
 
 /* Button style */
 button {
-    background-color:rgb(42, 1, 71);      
-    /* background-color: teal; */
+    background-color: #0299df ;     
     border: none;
+    border-radius: 5px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -76,12 +119,13 @@ button {
 p {
     font-size: 20px;
     padding: 7px;
+ 
 }
 
 /* Ribbon on top of footer */
 .ribbon {
     height: 5px;
-    background-color:rgb(42, 1, 71);
+    background-color:#0299df;
     /* background-color: teal; */
     width: 100%;
 }
@@ -92,10 +136,27 @@ footer {
     bottom: 0;
     height: 60px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     background-color:grey;
 }
 /* Change the padding to center the text */
 footer p {
-    padding: 10px;
+    float: left;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px;
 }
+
+.contact {
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 575px) {
+    footer p {
+        font-size: 12px;
+    }
+    
+    .contact {
+        font-size: 12px;
+    }
+  }
